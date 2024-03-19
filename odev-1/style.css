@@ -1,0 +1,184 @@
+/* Genel stiller */
+:root {
+  --card-color-1: #f7edf5;
+  --card-color-2: #f5faf3;
+  --card-color-3: #e9f6fb;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Ana Sayfa stilleri */
+#home {
+  color: #fff;
+  position: relative;
+}
+
+#slider {
+  position: relative;
+  opacity: 0.8;
+}
+
+#slider .carousel-inner {
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#slider .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+
+}
+
+/* Hakkımda stilleri */
+#about {
+  padding: 50px 0;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+.text-center {
+  font-weight: bold;
+}
+
+/* Projeler stilleri */
+#projects {
+  padding: 50px 0;
+}
+
+.card {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.card-color-1 {
+  background-color: var(--card-color-1);
+}
+
+.card-color-2 {
+  background-color: var(--card-color-2);
+}
+
+.card-color-3 {
+  background-color: var(--card-color-3);
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* İletişim stilleri */
+#contact {
+  padding: 50px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 10%;
+}
+
+.btn-primary {
+  border-radius: 0;
+}
+
+/* Footer stilleri */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+/* Buton ve footer hover efektleri */
+.btn:hover,
+footer:hover {
+  transform: scale(1.1);
+}
